@@ -4,20 +4,37 @@
    $.fn.zoompanzoom = function(options) {
 
    	var settings = $.extend({
-            animationSpeed: "fast"   
+            animationSpeed: "fast",
+            zoomfactor:.1,
+            maxZoom:3,
+            minZoom:0.5,
+            disablepan:false   
         }, options );
 
 	var zoomdiv  = this;
 	currentZoom = 1.0;
-	$(this).draggable();
+
+	if(!settings.disablepan)
+	{
+		$(this).draggable();
+	}
+	
 
 	jQuery('#zoom_in').click(
 		function () {
-			jQuery(zoomdiv).animate({ 'zoom': currentZoom += .1 }, settings.animationSpeed);
+			if(currentZoom<settings.maxZoom)
+			{
+				jQuery(zoomdiv).animate({ 'zoom': currentZoom += settings.zoomfactor }, settings.animationSpeed);
+			}
+			
 		})
 	jQuery('#zoom_out').click(
 		function () {
-			jQuery(zoomdiv).animate({ 'zoom': currentZoom -= .1 }, settings.animationSpeed);
+			if(currentZoom>settings.minZoom)
+			{
+				jQuery(zoomdiv).animate({ 'zoom': currentZoom -= settings.zoomfactor }, settings.animationSpeed);
+			}
+			
 		})
 	jQuery('#zoom_reset').click(
 		function () {
