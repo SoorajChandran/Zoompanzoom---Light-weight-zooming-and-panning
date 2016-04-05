@@ -3,6 +3,8 @@ Light weight zooming and panning Jquery plugin
 
 Zoompanzoom is a lightweight jQuery plugin for Zooming and Panning different elemets like div , Image , SVG etc.
 
+Dependant files - Jquery and Jquery UI
+
 # How to use 
 
 1. Create a div and assign an id 
