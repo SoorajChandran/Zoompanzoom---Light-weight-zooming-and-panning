@@ -14,3 +14,8 @@ Zoompanzoom is a lightweight jQuery plugin for Zooming and Panning different ele
 
 # Options
 1.animationSpeed - possible values can be slow,normal,fast or any other number
+<code>
+$("#my_div").zoompanzoom({
+		animationSpeed: "slow"  
+	});
+	</code>
