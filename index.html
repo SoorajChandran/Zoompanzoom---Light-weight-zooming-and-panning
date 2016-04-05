@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+	<script src="zoompanzoom.js"></script>
+	<style type="text/css">
+	body
+	{
+		font-family: arial;
+	}
+     #my_div
+     {
+     	height:400px;
+     	width: 500px;
+     	background: #6C7A89;
+     	padding: 10px;
+     }
+     #controls
+     {
+     	padding: 10px;
+     }
+     #controls button
+     {
+  		height: 40px;
+  		min-width: 40px;
+  		width: auto;
+  		padding: 10px;
+  		border:none;
+  		font-size: 1em;
+  		background: #3FC380;
+  		border-bottom: 2px solid #16A085;
+  		color: white;
+     }
+	</style>
+</head>
+<body>
+<div id="controls">
+	<button id="zoom_in">+</button>
+	<button id="zoom_out">-</button> 
+	<button id="zoom_reset">reset</button> 
+</div>
+<div id="my_div">
+This is the div I want to pan and zoom <br>
+This div can contain any kind of elements
+<button>Button</button> 
+<a href="#">Hyperlink</a>
+<p>Paragraph</p>
+<table>
+	<tr><td>table</td><td>table</td></tr>
+</table>
+SVG
+<svg height="100" width="100">
+  <circle cx="50" cy="50" r="40" stroke="#F5AB35" stroke-width="3" fill="#D35400" />
+</svg>
+</div>
+
+<script type="text/javascript">
+	$("#my_div").zoompanzoom({
+		animationSpeed: "slow"  
+	});
+</script>
+</body>
+</html>
