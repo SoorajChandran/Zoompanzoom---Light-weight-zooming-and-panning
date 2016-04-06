@@ -30,3 +30,14 @@ default value - 3<br>
 4.minZoom - Minimum zoom<br>
 default value - 0.5<br>
 5.disablePan - false to disable panning. Default value is true.<br>
+
+Complete Example:
+<pre>
+$("#my_div").zoompanzoom({
+    animationSpeed: "slow",
+    zoomfactor: .8,
+    maxZoom: 2.5,
+    minZoom: 0.9,
+    disablePan: false  
+	});
+</pre>
