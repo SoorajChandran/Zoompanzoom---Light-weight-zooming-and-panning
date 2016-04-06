@@ -21,10 +21,12 @@ $("#my_div").zoompanzoom({
 		animationSpeed: "slow"  
 	});
 	</code>
-2.zoomfactor - The factor by which the zoom out or zoom in will happen 
-default value - 0.1
-3.maxZoom - maximum zoom 
-default value - 3
-4.minZoom - Minimum zoom
-default value - 0.5
-5.disablePan - false to disable panning. Default value is true.
+	
+2.zoomfactor - The factor by which the zoom out or zoom in will happen  <br>
+
+default value - 0.1 <br>
+3.maxZoom - maximum zoom <br>
+default value - 3<br>
+4.minZoom - Minimum zoom<br>
+default value - 0.5<br>
+5.disablePan - false to disable panning. Default value is true.<br>
